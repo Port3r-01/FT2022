@@ -1,0 +1,327 @@
+<html>
+   <head>
+
+      <img src="https://img1.wsimg.com/isteam/ip/6a432b84-1313-48c6-ae1f-9df80adb4509/logo/973f6a8e-f9da-4685-81eb-f4ef79dea276.png/:/rs=h:200,cg:true,m/qt=q:95", width="500px", height="150px" alt="Girl in a jacket", position: "fixed">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      
+          <style>
+        body {
+          margin: 0;
+          font-size: 28px;
+          font-family: Arial, Monospace, sans-serif;
+        }
+
+        .header {
+          background-color: #f1f1f1;
+          padding: 4px;
+          text-align: center;
+        }
+
+       #navbar {
+          overflow: hidden;
+          background-color: rgb(75, 157, 224);
+        }
+
+       #navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+       }
+
+       #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+         }
+
+       #navbar a.active {
+       background-color: rgba(75, 157, 224, 0.753);
+       color: white;
+       box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+       }
+
+       .content {
+          padding: 16px;
+         }
+
+       .sticky {
+           position: fixed;
+           top: 0;
+           width: 100%;
+        }
+
+        .sticky + .content {
+          padding-top: 60px;
+         }
+    </style>
+
+         <style>
+           .parallax {
+           background-image: url("https://images.unsplash.com/photo-1462651567147-aa679fd1cfaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+
+           min-height: 500px; 
+
+           background-attachment: fixed;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           }        
+         </style>
+         
+         <div class="header"></div>
+         <div id="navbar">
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">About</a>
+            <a href="javascript:void(0)">Services</a>
+            <a href="javascript:void(0)">Billing</a>
+            <a href="javascript:void(0)">Contact</a>
+          </div>
+         <div class="parallax"></div>
+         <div class="content"></div>  
+       
+         <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+         <style>
+            .h2 {
+            font-style: "Lucida Handwriting";
+            padding: 10px;
+            }
+         </style> 
+
+        <div class ="h2">Welcome, it's good to have you here.</div> 
+ <style>
+   figure {
+     border: 1px #cccccc solid; 
+     border-width: 5px;
+     margin: left;
+   }
+   
+   figcaption {
+     background-color: black;
+     color: white;
+     font-style: italic;
+     padding: 2px;
+     text-align: center;
+   }
+ </style>
+   
+</head>
+
+<body>
+   
+   <figure>
+     <img src="https://img1.wsimg.com/isteam/ip/6a432b84-1313-48c6-ae1f-9df80adb4509/20190628_Headshots_TimCarey_0026.jpg/:/rs=w:1023,h:1520", width="200px",v height="280px", alt="Error">
+     <figcaption>Tim Carey, registered psychologist.</figcaption>
+   </figure>
+   
+   <style>
+   h1 {
+  
+      position: absolute
+      ;
+        
+      top
+      : 850px;
+        
+      right
+      : 900px;
+
+      font-size: 24px;
+   }
+</style>
+
+
+   <h1>What can you  expect a  psychologist to help with?<br>
+       Psychologists can help with most areas of your life,<br>  
+       assisting you to be a better version of yourself.<br> 
+       I also work alongside a wide variety of other health<br>
+       professionals in providing client-centred care.
+      <br>
+
+      </h1>
+
+
+
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <style>
+ body {
+   font-family: Verdana, sans-serif;
+  margin: 0;
+ }
+
+ * {
+  box-sizing: border-box;
+ }
+
+ img {
+  vertical-align: middle;
+ }
+
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+  position: relative;
+ }
+
+ /* Hide the images by default */
+ .mySlides {
+  display: none;
+ }
+
+ /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+  cursor: pointer;
+ }
+
+ /* Next & previous buttons */
+ .prev,
+ .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  }
+
+ /* Position the "next button" to the right */
+ .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+ }
+
+ /* Container for image text */
+ .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+ }
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+ /* Six columns side by side */
+ .column {
+  float: left;
+  width: 16.66%;
+ }
+
+ /* Add a transparency effect for thumnbail images */
+ .demo {
+  opacity: 0.6;
+ }
+
+ .active,
+ .demo:hover {
+  opacity: 1;
+ }
+ </style>
+
+ <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+ </script>
+
+ <div>
+ <div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="WhoAmI.PNG" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="Help.PNG" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="WhatHelp.PNG" style="width:50%">
+  </div>
+        
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+</body>
+
+<h2>Client Testimonals</h2>
+
+
+
+</html> 
+
+
